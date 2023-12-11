@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1f1f1f;
+
+  color: #fff;
+}
+
+.mainContainer {
+  width: 130rem;
+  height: 100vh;
+}
+
+/* clases reutilizables */
+
+/* ///////////HEADER/////////// */
+
+.mainHeader {
+  max-width: 100%;
+  height: 60rem;
+
+  background-image: linear-gradient(rgba(255, 147, 147, 0.059), #fff04c3e),
+    url(img/headerimage.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.verifiedArtist {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.bandName {
+  font-size: 12rem;
+  font-weight: bold;
+  letter-spacing: -2px;
+  margin-bottom: 2.4rem;
+}
+
+.monthlyListeners {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.headerText {
+  padding: 3.6rem 3.6rem;
+  position: absolute;
+  bottom: 0rem;
+}
