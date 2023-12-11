@@ -1,3 +1,18 @@
+/* colores pagina
+spotify: #00d66d 
+fondo:   #000000
+         #101010
+
+tipogfrafia
+        #ffffff
+        #a7a7a7
+        #b3b3b3
+
+tarjetas componente
+        #181818
+hover:  #222222
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -10,31 +25,54 @@ html {
 }
 
 body {
-  background-color: #1f1f1f;
+  background-color: #101010;
 
   color: #fff;
 }
 
 .mainContainer {
+  margin: auto;
   width: 130rem;
   height: 100vh;
 }
 
 /* clases reutilizables */
 
+.btn {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover,
+.btn:active {
+  transition: all 0.1s;
+  transform: scale(105%);
+}
+
 /* ///////////HEADER/////////// */
 
 .mainHeader {
   max-width: 100%;
-  height: 60rem;
+  height: 48rem;
 
   background-image: linear-gradient(rgba(255, 147, 147, 0.059), #fff04c3e),
     url(img/headerimage.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
 
-  position: relative;
+.headerText {
+  padding: 3.6rem;
+  bottom: 0rem;
+  grid-row-start: 2;
 }
 
 .verifiedArtist {
@@ -53,8 +91,40 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
 }
-.headerText {
-  padding: 3.6rem 3.6rem;
-  position: absolute;
-  bottom: 0rem;
+
+/* ////////////music controls/////////// */
+
+.sectionControls {
+  background-color: red;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  padding: 3.6rem;
+}
+
+.controlsContainer {
+  display: flex;
+
+  gap: 2.4rem;
+}
+
+.playButton {
+  background-color: #00d66d;
+
+  padding-left: 0.3rem;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  font-size: 3rem;
+  fill: #000;
+}
+
+.playButton:hover,
+.playButton:active {
+  background-color: #00de72;
+}
+
+.shuffleButton {
+  font-size: 3.6rem;
+  color: ;
 }
