@@ -36,7 +36,7 @@ body {
   margin: auto;
   width: 130rem;
   height: 100vh;
-  background-color: #101010;
+  background-image: linear-gradient(#fff04c34, #101010);
 }
 
 /* clases reutilizables */
@@ -81,8 +81,6 @@ body {
 .verifiedIcon {
   fill: #3d8fee;
   font-size: 3.6rem;
-  border: 2px solid #3d8feez;
-  border-radius: 50%;
 }
 
 .verifiedArtist {
@@ -136,7 +134,6 @@ body {
 
 .shuffleButton {
   font-size: 4.8rem;
-  color: ;
   color: #a7a7a7;
 }
 
