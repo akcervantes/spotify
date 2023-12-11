@@ -3,6 +3,8 @@ spotify: #00d66d
 fondo:   #000000
          #101010
 
+verified:#3d8fee;
+
 tipogfrafia
         #ffffff
         #a7a7a7
@@ -25,7 +27,7 @@ html {
 }
 
 body {
-  background-color: #101010;
+  background-color: #000;
 
   color: #fff;
 }
@@ -34,6 +36,7 @@ body {
   margin: auto;
   width: 130rem;
   height: 100vh;
+  background-color: #101010;
 }
 
 /* clases reutilizables */
@@ -75,9 +78,20 @@ body {
   grid-row-start: 2;
 }
 
+.verifiedIcon {
+  fill: #3d8fee;
+  font-size: 3.6rem;
+  border: 2px solid #3d8feez;
+  border-radius: 50%;
+}
+
 .verifiedArtist {
   font-size: 1.6rem;
+  font-weight: 600;
   margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .bandName {
@@ -95,15 +109,11 @@ body {
 /* ////////////music controls/////////// */
 
 .sectionControls {
-  background-color: red;
+  background-color: transparent;
   height: 10rem;
   display: flex;
   align-items: center;
   padding: 3.6rem;
-}
-
-.controlsContainer {
-  display: flex;
 
   gap: 2.4rem;
 }
@@ -125,6 +135,27 @@ body {
 }
 
 .shuffleButton {
-  font-size: 3.6rem;
+  font-size: 4.8rem;
   color: ;
+  color: #a7a7a7;
+}
+
+.followingButton {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+  border: 1.3px solid #a7a7a7;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+}
+
+.btn--2:hover {
+  transform: all 0.1s;
+  color: #fff;
+  border-color: #fff;
+}
+
+.optionsButton {
+  color: #a7a7a7;
+  font-size: 3.6rem;
 }
