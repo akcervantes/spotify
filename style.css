@@ -19,7 +19,7 @@ hover:  #222222
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "gotham", sans-serif;
 }
 
 html {
@@ -74,7 +74,6 @@ body {
 
 .headerText {
   padding: 3.6rem;
-  bottom: 0rem;
   grid-row-start: 2;
 }
 
@@ -85,7 +84,7 @@ body {
 
 .verifiedArtist {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
@@ -95,13 +94,13 @@ body {
 .bandName {
   font-size: 12rem;
   font-weight: bold;
-  letter-spacing: -2px;
+  letter-spacing: -5px;
   margin-bottom: 2.4rem;
 }
 
 .monthlyListeners {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* ////////////music controls/////////// */
