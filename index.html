@@ -12,23 +12,28 @@
     <div class="mainContainer">
       <header class="mainHeader">
         <div class="headerText">
-          <p class="verifiedArtist">Verified artist</p>
+          <p class="verifiedArtist">
+            <ion-icon name="checkmark-circle" class="verifiedIcon"></ion-icon
+            >Verified artist
+          </p>
           <h1 class="bandName">tricot</h1>
           <p class="monthlyListeners">179,711 monthly listeners</p>
         </div>
       </header>
 
       <section class="sectionControls">
-        <div class="controlsContainer">
-          <button name="play" class="playButton btn">
-            <ion-icon name="play-sharp"></ion-icon>
-          </button>
-          <button class="shuffleButton btn">
-            <ion-icon name="shuffle"></ion-icon>
-          </button>
-          <button class="followingButton btn"></button>
-          <button class="optionsButton btn"></button>
-        </div>
+        <button name="play" class="playButton btn">
+          <ion-icon name="play-sharp"></ion-icon>
+        </button>
+        <button class="shuffleButton btn btn--2">
+          <ion-icon name="shuffle"></ion-icon>
+        </button>
+        <button class="followingButton btn btn--2">
+          <span>Following</span>
+        </button>
+        <button class="optionsButton btn btn--2">
+          <ion-icon name="ellipsis-horizontal"></ion-icon>
+        </button>
       </section>
     </div>
 
