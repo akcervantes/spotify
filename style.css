@@ -32,11 +32,15 @@ body {
   color: #fff;
 }
 
+.bodyContainer {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
 .mainContainer {
-  margin: auto;
-  width: 130rem;
+  max-width: 100%;
   height: 100vh;
-  background-image: linear-gradient(#fff04c34, #101010);
+  background-image: linear-gradient(#fff04c53, #101010);
 }
 
 /* clases reutilizables */
@@ -64,7 +68,7 @@ body {
   height: 48rem;
 
   background-image: linear-gradient(rgba(255, 147, 147, 0.059), #fff04c3e),
-    url(img/headerimage.jpg);
+    url(img/headerimg2.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
