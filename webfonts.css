@@ -9,12 +9,12 @@
   font-family: "Gotham";
   font-weight: 400;
   font-style: normal;
-  src: url(/fonts/GothamMedium.ttf);
+  src: url(fonts/GothamMedium.ttf);
 }
 
 @font-face {
   font-family: "Gotham";
   font-weight: 300;
   font-style: normal;
-  src: url(/fonts/Gotham-book.otf);
+  src: url(fonts/GothamBook.ttf);
 }
