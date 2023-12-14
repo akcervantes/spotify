@@ -1,0 +1,77 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --form-outline: #999;
+  --background-color: #fff;
+}
+
+.signUpForm {
+  display: grid;
+  max-width: 60rem;
+  grid-template-columns: 3rem 6rem 12rem 6rem 12rem;
+  column-gap: 1.2rem;
+  row-gap: 1.8rem;
+  align-items: center;
+}
+
+.formIcon {
+  justify-self: center;
+  font-size: 1.4rem;
+}
+
+.notesIcon {
+  align-self: start;
+  padding-top: 0.6rem;
+}
+
+.col--span2 {
+  grid-column-start: span 2;
+}
+
+.col--span4 {
+  grid-column-start: span 4;
+}
+
+.row--span2 {
+  grid-row-start: span 2;
+}
+
+.inputForm,
+.selectForm {
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  border: 1px var(--form-outline) solid;
+  background-color: var(--background-color);
+}
+
+.phoneContainer {
+  position: relative;
+}
+
+.phoneLabel {
+  position: absolute;
+  background-color: var(--background-color);
+  font-size: 0.8rem;
+  left: 10px;
+  top: -5px;
+  padding: 0 3px;
+  color: var(--form-outline);
+}
+
+.phoneInput {
+  width: 100%;
+}
+
+.textAreaForm {
+  resize: none;
+}
