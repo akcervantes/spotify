@@ -15,13 +15,13 @@
       <form class="signUpForm">
         <ion-icon class="formIcon" name="person-outline"></ion-icon>
         <input
-          class="inputForm col--span2"
+          class="inputForm col--span2 firstNameQ"
           name="first-name"
           placeholder="First name"
           required
         />
         <input
-          class="inputForm col--span2"
+          class="inputForm col--span2 lastNameQ"
           name="last-name"
           placeholder="Last name"
           required
@@ -29,48 +29,55 @@
 
         <ion-icon class="formIcon" name="business-outline"></ion-icon>
         <input
-          class="inputForm col--span2"
+          class="inputForm col--span2 companyNameQ"
           name="company-name"
           placeholder="Company"
         />
         <input
-          class="inputForm col--span2"
+          class="inputForm col--span2 jobTitleQ"
           name="job-title"
           placeholder="Job title"
         />
 
         <ion-icon class="formIcon" name="mail-outline"></ion-icon>
         <input
-          class="inputForm col--span4"
+          class="inputForm col--span4 emailAdressQ"
           name="email-adress"
           placeholder="Email"
           required
         />
 
         <ion-icon class="formIcon" name="call"></ion-icon>
-        <select class="selectForm selectOption" name="country-phone" required>
+        <select
+          class="selectForm selectOption phoneQ"
+          name="country-phone"
+          required
+        >
           <option value="brasil">🇧🇷</option>
           <option value="méxico">🇲🇽</option>
           <option value="chile">🇨🇱</option>
         </select>
         <div class="col--span2 phoneContainer">
-          <label class="phoneLabel">Phone </label>
+          <label class="phoneLegend">Phone </label>
           <input
             class="inputForm phoneInput"
             name="phone-number"
             placeholder="55"
           />
         </div>
-
         <input
-          class="inputForm"
+          class="inputForm phoneLabelQ"
           name="phone-label"
           placeholder="Label"
           required
         />
 
         <ion-icon class="formIcon" name="gift-outline"></ion-icon>
-        <select class="selectForm col--span2" name="birthMonth" required>
+        <select
+          class="selectForm col--span2 birthMonthQ"
+          name="birthMonth"
+          required
+        >
           <option class="selectOption" value="">Month</option>
           <option value="january">january</option>
           <option value="february">february</option>
@@ -85,8 +92,12 @@
           <option value="november">november</option>
           <option value="december">december</option>
         </select>
-        <input class="inputForm" name="birthDay" placeholder="Day" />
-        <input class="inputForm" name="birthYear" placeholder="Year" />
+        <input class="inputForm birthDayQ" name="birthDay" placeholder="Day" />
+        <input
+          class="inputForm birthYearQ"
+          name="birthYear"
+          placeholder="Year"
+        />
 
         <ion-icon class="formIcon notesIcon" name="document-outline"></ion-icon>
         <textarea

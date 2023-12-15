@@ -14,10 +14,16 @@ html {
   --background-color: #fff;
 }
 
-.signUpForm {
-  display: grid;
+.sectionSignUp {
+  margin: 5rem auto;
+
   max-width: 60rem;
-  grid-template-columns: 3rem 6rem 12rem 6rem 12rem;
+}
+
+.signUpForm {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 9fr 12fr 9fr 12fr;
   column-gap: 1.2rem;
   row-gap: 1.8rem;
   align-items: center;
@@ -41,7 +47,7 @@ html {
   grid-column-start: span 4;
 }
 
-.row--span2 {
+.row--span3 {
   grid-row-start: span 2;
 }
 
@@ -58,7 +64,7 @@ html {
   position: relative;
 }
 
-.phoneLabel {
+.phoneLegend {
   position: absolute;
   background-color: var(--background-color);
   font-size: 0.8rem;
@@ -74,4 +80,47 @@ html {
 
 .textAreaForm {
   resize: none;
+}
+
+@media (max-width: 900px) {
+  .sectionSignUp {
+    max-width: 40rem;
+  }
+
+  .signUpForm {
+    max-width: 100%;
+    grid-template-columns: 3fr 50px 12fr 9fr 12fr;
+  }
+
+  .firstNameQ,
+  .companyNameQ {
+    grid-column: span 4;
+  }
+  .lastNameQ,
+  .jobTitleQ {
+    grid-column: 2 / span 4;
+  }
+}
+
+@media (max-width: 600px) {
+  .sectionSignUp {
+    max-width: 250px;
+  }
+  .signUpForm {
+    max-width: 250px;
+    grid-template-columns: 30px 50px 80px 50px;
+  }
+
+  .firstNameQ,
+  .companyNameQ,
+  .emailAdressQ,
+  .textAreaForm {
+    grid-column: span 3;
+  }
+  .lastNameQ,
+  .jobTitleQ,
+  .phoneLabelQ,
+  .birthYearQ {
+    grid-column: 2 / span 3;
+  }
 }
