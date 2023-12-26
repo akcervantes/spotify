@@ -38,7 +38,7 @@ const karina = {
 
 function zodiacSign(persona) {
   const month = persona.birthDay.getMonth() + 1;
-  const day = persona.birthDay.getDay();
+  const day = persona.birthDay.getDate();
 
   let sign;
 
